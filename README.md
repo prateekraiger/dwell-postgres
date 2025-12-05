@@ -44,7 +44,7 @@ dwell/
 
 - Node.js 18+
 - PostgreSQL database
-- npm/pnpm/yarn
+- pnpm/ppnpm/yarn
 
 ### Backend Setup
 
@@ -52,7 +52,7 @@ dwell/
 
 ```bash
 cd backend
-npm install
+pnpm install
 ```
 
 2. Set up environment variables
@@ -80,14 +80,14 @@ openssl rand -base64 32
 3. Set up the database
 
 ```bash
-npm run prisma:generate
-npm run prisma:migrate
+pnpm run prisma:generate
+pnpm run prisma:migrate
 ```
 
 4. Start backend server
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Backend runs on [http://localhost:5000](http://localhost:5000)
@@ -98,7 +98,7 @@ Backend runs on [http://localhost:5000](http://localhost:5000)
 
 ```bash
 cd ..
-npm install
+pnpm install
 ```
 
 2. Set up environment variables
@@ -116,7 +116,7 @@ NEXT_PUBLIC_API_URL="http://localhost:5000/api"
 3. Start frontend
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Frontend runs on [http://localhost:3000](http://localhost:3000)
@@ -226,17 +226,17 @@ backend/
 
 ## Development Workflow
 
-1. **Start Backend**: `cd backend && npm run dev` (Port 5000)
-2. **Start Frontend**: `npm run dev` (Port 3000)
-3. **View Database**: `cd backend && npm run prisma:studio`
+1. **Start Backend**: `cd backend && pnpm run dev` (Port 5000)
+2. **Start Frontend**: `pnpm run dev` (Port 3000)
+3. **View Database**: `cd backend && pnpm run prisma:studio`
 
 ## Deployment
 
 ### Backend Deployment (Railway, Render, Heroku, etc.)
 
 1. Set environment variables on your hosting platform
-2. Build: `npm run build`
-3. Start: `npm start`
+2. Build: `pnpm run build`
+3. Start: `pnpm start`
 
 ### Frontend Deployment (Vercel, Netlify, etc.)
 
@@ -247,7 +247,7 @@ backend/
 
 1. Create PostgreSQL database on your hosting provider
 2. Update `DATABASE_URL` environment variable
-3. Run migrations: `npm run prisma:migrate`
+3. Run migrations: `pnpm run prisma:migrate`
 
 ## Next Steps
 
